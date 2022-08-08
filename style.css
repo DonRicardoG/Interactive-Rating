@@ -1,0 +1,165 @@
+:root{
+    --main-font: 'Overpass', sans-serif;
+
+    /* Colors */
+    --primary: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightgrey:hsl(214, 19%, 26%);
+    --grey: hsl(216, 12%, 54%);
+    --blue: hsl(213, 19%, 18%);
+    --darkBlue: hsl(216, 12%, 8%);
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-size: 1.5rem;
+    background-color: var(--darkBlue);
+}
+
+/* Main Page */
+
+.mainPage{
+    display: block;
+}
+
+.container{
+    display: block;
+    background-color: var(--blue);
+    margin: 20rem auto;
+    width: 40rem;
+    padding: 2.5rem;
+    height: 40rem;
+    border: 1px;
+    border-radius: 2rem;
+}
+
+.star-svg{
+    background-color: var(--lightgrey);
+    width: 4.5rem;
+    display: flex;
+    height: 4.5rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px;
+    border-radius: 2.5rem;
+}
+.text{
+    font-family: var(--main-font);
+}
+.text h1{
+    color: var(--white);
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.text p{
+    color: var(--grey);
+    line-height: 2.5rem;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.list button{
+    display: flex;
+    color: var(--white);
+    background-color: var(--lightgrey);
+    height: 4.5rem;
+    width: 4.5rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px;
+    border-radius: 2.5rem;
+}
+
+.list a{
+    text-decoration: none;
+}
+
+.list button:hover{
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.list button:focus{
+    background-color: var(--grey);
+}
+
+
+.btn-submit{
+    background-color: var(--primary);
+    border: none;
+    width: 35rem;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    border-radius: 2.5rem;
+    text-transform: uppercase;
+    font-family: var(--main-font);
+    color: var(--white);
+    letter-spacing: 0.3rem;
+}
+
+button:hover{
+    background-color: var(--white);
+    cursor: pointer;
+    color: var(--primary);
+}
+
+/* Thankyou Page */
+.thankyouPage{
+    display: none;
+}
+
+.mobile-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thankyou-p{
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightgrey);
+    width: 20rem;
+    margin: 4rem auto;
+    margin-bottom: 3rem;
+    border: 1px;
+    padding: 0.3rem 0;
+    border-radius: 1rem;
+    color: var(--primary);
+}
+
+.thank-h1{
+    color: var(--white);
+    font-family: var(--main-font);
+    text-align: center;
+    font-weight: 400;
+}
+
+.thankyou-p2{
+    color: var(--grey);
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.none{
+    display: none;
+}
+
+.block{
+    display: block;
+}
